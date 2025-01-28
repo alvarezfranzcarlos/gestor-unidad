@@ -2,3 +2,5 @@
 !target/*.jar
 !target/lib/*
 !target/quarkus-app/*
+!mvnw
+!.mvn/

@@ -1,7 +1,6 @@
 FROM amazoncorretto:17 AS build
 WORKDIR /app
 COPY . .
-RUN ./mvnw package
 
 FROM amazoncorretto:17
 WORKDIR /app
