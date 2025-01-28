@@ -5,7 +5,7 @@ import com.vulcan.config.AppConfig;
 public class MainApp {
     public static void main(String[] args) {
         // Determinar el perfil desde una variable de entorno o usar "local" por defecto
-        String profile = System.getenv("APP_PROFILE");
+        String profile = System.getenv("QUARKUS_PROFILE");
         if (profile == null) {
             profile = "local";
         }
