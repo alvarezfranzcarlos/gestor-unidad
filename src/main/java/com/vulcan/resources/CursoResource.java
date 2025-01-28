@@ -5,12 +5,10 @@ import com.vulcan.repository.CursoRepository;
 import com.vulcan.service.CursoService;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
-import jakarta.annotation.security.PermitAll;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Context;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.SecurityContext;
-import org.jboss.logging.Logger;
 import java.util.Map;
 import java.util.List;
 
