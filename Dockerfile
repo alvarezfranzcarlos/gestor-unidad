@@ -4,7 +4,7 @@ COPY target/gestor-unidad-1.0.0-SNAPSHOT.jar app.jar
 
 # Especifica que Quarkus debe ejecutarse en el perfil de producción
 ENV QUARKUS_PROFILE=prod
-
+ENV DATABASE_URL=postgresql://unidad_db_user:F0Pc3LBYKPtOOuhsY49um3wl53AqCcYY@dpg-cuc4hh3v2p9s73d1icp0-a/unidad_db
 # Exponer el puerto para Render (Render detecta automáticamente el puerto expuesto)
 EXPOSE 8080
 
@@ -12,7 +12,7 @@ EXPOSE 8080
 ENTRYPOINT ["java", \
             "-Dquarkus.http.host=0.0.0.0", \
             "-Dquarkus.http.port=${PORT}", \
-            "-Dquarkus.datasource.jdbc.url=${DATABASE_URL}", \
+            "-Dquarkus.datasource.jdbc.url=postgresql://unidad_db_user:F0Pc3LBYKPtOOuhsY49um3wl53AqCcYY@dpg-cuc4hh3v2p9s73d1icp0-a/unidad_db", \
             "-Dquarkus.datasource.username=${DATABASE_USER}", \
             "-Dquarkus.datasource.password=${DATABASE_PASSWORD}", \
             "-Dquarkus.profile=${QUARKUS_PROFILE}", \
