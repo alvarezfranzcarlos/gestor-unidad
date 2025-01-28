@@ -1,0 +1,14 @@
+com\vulcan\config\ConfigLoader.class
+com\vulcan\model\Curso.class
+com\vulcan\repository\AlumnoRepository.class
+com\vulcan\service\CursoService.class
+com\vulcan\MainApp.class
+com\vulcan\resources\AlumnoResource.class
+com\vulcan\filters\SecurityLoggingFilter.class
+com\vulcan\model\Alumno.class
+com\vulcan\filters\BasicAuthFilter.class
+com\vulcan\resources\ResourceCleaner.class
+com\vulcan\filters\BasicAuthFilter$1.class
+com\vulcan\config\AppConfig.class
+com\vulcan\repository\CursoRepository.class
+com\vulcan\resources\CursoResource.class
