@@ -6,7 +6,7 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 # Fase de ejecución
-FROM eclipse-temurin:17-jdk
+FROM ghcr.io/adoptium/temurin:17-jdk
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 CMD ["java", "-jar", "app.jar"]
