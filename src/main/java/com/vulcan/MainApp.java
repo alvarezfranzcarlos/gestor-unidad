@@ -7,7 +7,7 @@ public class MainApp {
         // Determinar el perfil desde una variable de entorno o usar "local" por defecto
         String profile = System.getenv("QUARKUS_PROFILE");
         if (profile == null) {
-            profile = "local";
+            profile = "prod";
         }
 
         // Cargar configuraciones según el perfil
