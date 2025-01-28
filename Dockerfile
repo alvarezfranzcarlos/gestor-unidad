@@ -2,7 +2,7 @@
 FROM amazoncorretto:17
 
 # Establecer el directorio de trabajo dentro del contenedor
-WORKDIR /app
+#WORKDIR /app
 
 # Copia el archivo JAR generado en la carpeta target
 COPY target/gestor-unidad-1.0.0-SNAPSHOT.jar app.jar
