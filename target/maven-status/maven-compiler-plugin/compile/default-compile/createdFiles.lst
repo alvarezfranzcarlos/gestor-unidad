@@ -8,7 +8,6 @@ com\vulcan\filters\SecurityLoggingFilter.class
 com\vulcan\model\Alumno.class
 com\vulcan\filters\BasicAuthFilter.class
 com\vulcan\resources\ResourceCleaner.class
-com\vulcan\filters\BasicAuthFilter$1.class
 com\vulcan\config\AppConfig.class
 com\vulcan\repository\CursoRepository.class
 com\vulcan\resources\CursoResource.class

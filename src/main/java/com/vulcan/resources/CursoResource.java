@@ -34,8 +34,7 @@ public class CursoResource {
     @GET
     public List<Curso> getAll() {
         // Registrar el usuario autenticado en los logs
-        String user = securityContext.getUserPrincipal() != null
-                ? securityContext.getUserPrincipal().getName()
+        String user = securityContext.getUserPrincipal() != null ? securityContext.getUserPrincipal().getName()
                 : "anonymous";
         System.out.println("Usuario autenticado: " + user);
         return cursoRepository.listAll();
