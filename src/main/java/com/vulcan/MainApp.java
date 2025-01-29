@@ -17,6 +17,5 @@ public class MainApp {
         System.out.println("Perfil activo: " + profile);
         System.out.println("Base de datos URL: " + AppConfig.get("quarkus.datasource.jdbc.url"));
 
-        // Aquí puedes iniciar el framework (por ejemplo, Quarkus.run(args))
     }
 }

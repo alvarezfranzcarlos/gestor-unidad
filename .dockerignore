@@ -1,6 +1,10 @@
+# Ignorar todo
 *
+
+# Permitir el JAR generado
 !target/*.jar
-!target/lib/*
-!target/quarkus-app/*
+!target/quarkus-app/**
+
+# Permitir archivos de Maven
 !mvnw
 !.mvn/
