@@ -10,9 +10,9 @@ import jakarta.ws.rs.ext.Provider;
 public class SecurityLoggingFilter implements ContainerRequestFilter {
     @Override
     public void filter(ContainerRequestContext requestContext) {
-        System.out.println("Usuario autenticado: " +
-                requestContext.getSecurityContext().getUserPrincipal());
-        System.out.println("Es admin: " +
-                requestContext.getSecurityContext().isUserInRole("admin"));
+        // System.out.println("Usuario autenticado: " +
+        // requestContext.getSecurityContext().getUserPrincipal());
+        // System.out.println("Es admin: " +
+        // requestContext.getSecurityContext().isUserInRole("admin"));
     }
 }
